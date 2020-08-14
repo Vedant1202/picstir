@@ -1,11 +1,12 @@
 # PicStir
 
-Picture sharing social media application.
+Picture sharing social media application. Enables user to post pictures, like pictures and chat with other members.
 
 ## Features
 
 - **ES9**: latest ECMAScript features
 - **NoSQL database**: [MongoDB](https://www.mongodb.com) object data modeling using [Mongoose](https://mongoosejs.com)
+- **Socket Messaging**: [Socket.io](https://www.socket.io)
 - **Authentication and authorization**: using [passport](http://www.passportjs.org)
 - **Validation**: request data validation using [Joi](https://github.com/hapijs/joi)
 - **Logging**: using [winston](https://github.com/winstonjs/winston) and [morgan](https://github.com/expressjs/morgan)
@@ -119,6 +120,7 @@ src\
  |--models\         # Mongoose models (data layer)
  |--routes\         # Routes
  |--services\       # Business logic (service layer)
+ |--sockets\        # Sockets logic (communication layer)
  |--utils\          # Utility classes and functions
  |--validations\    # Request data validation schemas
  |--app.js          # Express app
@@ -146,6 +148,22 @@ List of available routes:
 `GET /v1/users/:userId` - get user\
 `PATCH /v1/users/:userId` - update user\
 `DELETE /v1/users/:userId` - delete user
+
+**Post routes**:\
+`POST /v1/posts` - create a post\
+`GET /v1/posts` - get all posts\
+`GET /v1/posts/:postId` - get post\
+`PATCH /v1/posts/:postId` - update post\
+`DELETE /v1/posts/postId` - delete post
+
+**Post routes**:\
+`POST /v1/likes` - like a post\
+`DELETE /v1/likes` - remove like
+
+**Message routes**:\
+`POST /v1/messages` - create a message\
+`GET /v1/messages` - get all messages\
+`GET /v1/messages/:messageId` - get message\
 
 ## Error Handling
 
