@@ -41,6 +41,9 @@ Clone the repo:
 ```bash
 git clone https://github.com/Vedant1202/picstir.git
 cd picstir
+cd backend  # for backend setup
+OR
+cd frontend # for frontend setup
 ```
 
 Install the dependencies:
