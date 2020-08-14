@@ -4,7 +4,11 @@ Picture sharing social media application. Enables user to post pictures, like pi
 
 ## Features
 
-- **ES9**: latest ECMAScript features
+- **React**: Frontend built on [React](https://reactjs.org/).
+- **Routing, Redux**: Has React routing and [Redux](https://redux.js.org/) functionality.
+
+
+- **ES9**: latest ECMAScript for API code
 - **NoSQL database**: [MongoDB](https://www.mongodb.com) object data modeling using [Mongoose](https://mongoosejs.com)
 - **Socket Messaging**: [Socket.io](https://www.socket.io)
 - **Authentication and authorization**: using [passport](http://www.passportjs.org)
