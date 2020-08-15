@@ -19,7 +19,10 @@ const Header = ({ currentUser, removeCurrentUser, history }) => (
             <Box w='100%'>
                 {currentUser ? (
                     <Stack isInline spacing={4}>
-                        <Avatar name={currentUser.user.name} src={process.env.PUBLIC_URL + '/uploads/profile/' + currentUser.user.imageUrl} />
+                        <Avatar
+                            name={currentUser.user.name}
+                            src={process.env.PUBLIC_URL + '/uploads/profile/' + currentUser.user.imageUrl}
+                        />
                         <span className='header-items'>{capitalizeFirstLetter(currentUser.user.name.split(' ')[0])}</span>
                     </Stack>
                 ) : null}
