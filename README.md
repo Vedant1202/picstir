@@ -172,20 +172,36 @@ yarn prettier:fix
 
 ## Project Structure
 
+
 ```
-src\
- |--config\         # Environment variables and configuration related things
- |--controllers\    # Route controllers (controller layer)
- |--docs\           # Swagger files
- |--middlewares\    # Custom express middlewares
- |--models\         # Mongoose models (data layer)
- |--routes\         # Routes
- |--services\       # Business logic (service layer)
- |--sockets\        # Sockets logic (communication layer)
- |--utils\          # Utility classes and functions
- |--validations\    # Request data validation schemas
- |--app.js          # Express app
- |--index.js        # App entry point
+frontendend\
+ |--src\
+  |--assets\         # Static assets
+  |--components\     # React element components
+  |--controllers\    # Logic controllers (controller layer)
+  |--pages\          # React page components
+  |--redux\          # Redux config (data layer)
+  |--util\           # Utility functions
+  |--App.js          # App entry point
+ |--public\
+  |--uploads\        # Static uploads from server (this has to be done on a cloud or local file-server but for demonstratation purposes, I've put it here)
+   |--posts\         # Post images storage
+   |--profile\       # Profile pictures storage
+
+backend\
+ |--src\
+  |--config\         # Environment variables and configuration related things
+  |--controllers\    # Route controllers (controller layer)
+  |--docs\           # Swagger files
+  |--middlewares\    # Custom express middlewares
+  |--models\         # Mongoose models (data layer)
+  |--routes\         # Routes
+  |--services\       # Business logic (service layer)
+  |--sockets\        # Sockets logic (communication layer)
+  |--utils\          # Utility classes and functions
+  |--validations\    # Request data validation schemas
+  |--app.js          # Express app
+  |--index.js        # App entry point
 ```
 
 ## API Documentation
