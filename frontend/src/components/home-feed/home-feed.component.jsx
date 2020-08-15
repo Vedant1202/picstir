@@ -7,7 +7,7 @@ import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from '../../redux/user/user.selector';
 import { postController } from '../../controller';
 
-import NewPostComponent from '../../new-post/new-post.component';
+import NewPostComponent from '../new-post/new-post.component';
 
 import './home-feed.styles.scss';
 import Post from '../post/post.component';

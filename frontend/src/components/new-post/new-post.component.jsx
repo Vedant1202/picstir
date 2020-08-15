@@ -4,7 +4,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { selectCurrentUser } from '../redux/user/user.selector';
+import { selectCurrentUser } from '../../redux/user/user.selector';
 
 import {
     Modal,
@@ -19,7 +19,7 @@ import {
     Stack,
 } from '@chakra-ui/core';
 
-import NewPostFormComponent from '../components/new-post-form/new-post-form.component';
+import NewPostFormComponent from '../new-post-form/new-post-form.component';
 
 const NewPostComponent = ({ currentUser, post }) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
