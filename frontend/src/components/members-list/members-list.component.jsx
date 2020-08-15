@@ -45,7 +45,7 @@ class MembersListComponent extends React.Component {
                 members: response.data,
             });
         }
-    }
+    };
 
     handleChange = id => {
         this.setState({
@@ -71,11 +71,9 @@ class MembersListComponent extends React.Component {
                                 this.handleChange(val);
                             }}
                         >
-                            {
-                                members.map(({ id, name, ...otherProps }) => (
-                                    <MessageMemberRadioComponent key={id} value={id} {...otherProps} nameOfUser={name}/>
-                                ))
-                            }
+                            {members.map(({ id, name, ...otherProps }) => (
+                                <MessageMemberRadioComponent key={id} value={id} {...otherProps} nameOfUser={name} />
+                            ))}
                         </RadioButtonGroup>
                     </ModalBody>
                     <ModalFooter>

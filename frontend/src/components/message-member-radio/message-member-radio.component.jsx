@@ -23,8 +23,12 @@ const MessageMemberRadioComponent = React.forwardRef((props, ref) => {
             </Button>
             <Avatar mt={1} name={nameOfUser} src={imageUrl} />
             <Stack>
-                <Text size='sm' maxHeight='2vh' textTransform='capitalize'>{nameOfUser}</Text>
-                <Text size='xs' color='#bbb'>@{username}</Text>
+                <Text size='sm' maxHeight='2vh' textTransform='capitalize'>
+                    {nameOfUser}
+                </Text>
+                <Text size='xs' color='#bbb'>
+                    @{username}
+                </Text>
             </Stack>
         </Stack>
     );

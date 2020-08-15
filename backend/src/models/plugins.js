@@ -70,8 +70,8 @@ const paginate = (schema) => {
               $toString: '$_id',
             },
             postedById: {
-              $toObjectId: '$postedBy'
-            }
+              $toObjectId: '$postedBy',
+            },
           },
         },
         {
