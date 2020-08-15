@@ -174,7 +174,7 @@ yarn prettier:fix
 
 
 ```
-frontendend\
+frontend\
  |--src\
   |--assets\         # Static assets
   |--components\     # React element components
