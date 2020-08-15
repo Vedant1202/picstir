@@ -457,6 +457,8 @@ To maintain a consistent coding style across different IDEs, the project contain
 
 - [x] Add profile picture upload
 - [x] Retrieve members for new chat creation
+- [x] Update and Delete posts (backend)
+- [ ] Update and Delete posts (frontend)
 - [ ] Create new chat room
 - [ ] Isolate chats in separate chat rooms
 - [ ] Add notifications for new messages
