@@ -32,4 +32,4 @@ const getMembers = async (userId, token) => {
 
 module.exports = {
     getMembers,
-}
+};

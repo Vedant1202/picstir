@@ -19,7 +19,7 @@ class LoginFormComponent extends React.Component {
         try {
             const response = await auth.login(email, password);
             if (!response.success) {
-                alert(response.data.message);
+                alert(response.message);
             } else {
                 setCurrentUser(response.data);
                 this.setState({
