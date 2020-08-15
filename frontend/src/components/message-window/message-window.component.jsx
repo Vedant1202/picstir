@@ -53,6 +53,10 @@ class MessageWindowComponent extends React.Component {
 
         if (!response.success) {
             alert('There was some error in retrieving messages');
+            this.setState({
+                ...this.state,
+                messages: [],
+            });
         } else {
             rehydrateMessages(response.data);
             this.setState({
