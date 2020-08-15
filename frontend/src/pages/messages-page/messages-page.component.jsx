@@ -33,7 +33,7 @@ class MessagesPageComponent extends React.Component {
             toId: null,
             members: [],
             isOpen: false,
-        }
+        };
     }
 
     componentDidMount = async () => {
@@ -50,21 +50,21 @@ class MessagesPageComponent extends React.Component {
                 members: response.data,
             });
         }
-    }
+    };
 
     onOpen = () => {
         this.setState({
             ...this.state,
             isOpen: true,
-        })
-    }
+        });
+    };
 
     onClose = () => {
         this.setState({
             ...this.state,
             isOpen: false,
-        })
-    }
+        });
+    };
 
     render() {
         // const { isOpen, onOpen, onClose } = useDisclosure();
