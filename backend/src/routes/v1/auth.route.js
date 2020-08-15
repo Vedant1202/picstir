@@ -1,11 +1,24 @@
 const express = require('express');
+const multer = require('multer');
 const validate = require('../../middlewares/validate');
 const authValidation = require('../../validations/auth.validation');
 const authController = require('../../controllers/auth.controller');
+const fileUploadController = require('../../controllers/file-upload.controller');
 
 const router = express.Router();
 
-router.post('/register', validate(authValidation.register), authController.register);
+const uploadFile = (req, res, next) => {
+  const upload = multer({ storage: fileUploadController.profileStorage }).single('profilePicture');
+
+  upload(req, res, function (err) {
+    if (err) {
+      return err;
+    }
+    next();
+  });
+};
+
+router.post('/register', uploadFile, authController.register);
 router.post('/login', validate(authValidation.login), authController.login);
 router.post('/refresh-tokens', validate(authValidation.refreshTokens), authController.refreshTokens);
 router.post('/forgot-password', validate(authValidation.forgotPassword), authController.forgotPassword);

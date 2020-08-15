@@ -26,11 +26,17 @@ const login = async (email, password) => {
     }
 };
 
-const register = async (email, password, name, username) => {
+const register = async (email, password, name, username, file) => {
+    const fd = new FormData();
+    fd.append('email', email);
+    fd.append('password', password);
+    fd.append('name', name);
+    fd.append('username', username);
+    fd.append('profilePicture', file);
+
     const requestOptions = {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password, name, username }),
+        body: fd,
     };
 
     const response = await fetch(apiUrl + '/auth/register', requestOptions);
