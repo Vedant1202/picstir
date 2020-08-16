@@ -42,7 +42,7 @@ class MessageBoxComponent extends React.Component {
                 this.state.message,
                 this.props.currentUser.user.id,
                 this.props.currentUser.user.id === '5f36af2e76ae7765b8b96cf9'
-                    ? '5f352848ba06d97b58d00744'
+                    ? '5f37942f44af469488051eb9'
                     : '5f36af2e76ae7765b8b96cf9',
                 'Bearer ' + this.props.currentUser.tokens.access.token
             );
