@@ -2,6 +2,16 @@
 
 Picture sharing social media application. Enables user to post pictures, like pictures and chat with other members.
 
+## Screencasts
+
+ - ### Home Page
+![Home Page Screencast](https://github.com/Vedant1202/picstir/blob/master/screencasts/home.gif?raw=true)
+
+ - ### Chats
+![Chats Page Screencast](https://github.com/Vedant1202/picstir/blob/master/screencasts/chat.gif?raw=true)
+
+More screenshots in ```screencasts/``` directory.
+
 ## Features
 
 - **React**: Frontend built on [React](https://reactjs.org/).
@@ -202,6 +212,8 @@ backend\
   |--validations\    # Request data validation schemas
   |--app.js          # Express app
   |--index.js        # App entry point
+
+screencasts\         # contains screencasts and screenshots of application
 ```
 
 ## API Documentation
